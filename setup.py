@@ -5,7 +5,7 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name="ppfind",
-    version="1.0.0",
+    version="1.1.0",
     author="Disapole",
     author_email="disapolexiao@gmail.com",
     description="A command-line tool to find paper citations, ArXiv links, and GitHub repository links easily.",
