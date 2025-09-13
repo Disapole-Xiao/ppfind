@@ -86,7 +86,7 @@ class ConfigManager:
     def show_config(self):
         config = self.load_config()
         
-        print(f"⚙️ Config file: {self.config_file}\n")
+        print(f"Config file: {self.config_file}\n")
         
         # API Key (masked)
         api_key = config.get('api_key')

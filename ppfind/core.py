@@ -115,24 +115,4 @@ class PaperInfoFetcher:
         except Exception as e:
             print(f"Failed to get GitHub link: {title} - {e}")
             return None
-    
-    # def _is_title_similar(self, title1, title2, similarity_threshold=0.7):
-    #     """
-    #     Simple title similarity check
-    #     """
-    #     # to lower and remove punctuation
-    #     t1 = ''.join(c.lower() for c in title1 if c.isalnum() or c.isspace())
-    #     t2 = ''.join(c.lower() for c in title2 if c.isalnum() or c.isspace())
-        
-    #     words1 = set(t1.split())
-    #     words2 = set(t2.split())
-        
-    #     # compute intersection ratio
-    #     if len(words1) == 0 or len(words2) == 0:
-    #         return False
-        
-    #     intersection = words1.intersection(words2)
-    #     similarity = len(intersection) / min(len(words1), len(words2))
-        
-    #     return similarity > similarity_threshold
 
