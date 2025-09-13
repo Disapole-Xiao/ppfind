@@ -204,6 +204,7 @@ def cmd_file(args):
     for index, row in df.iterrows():
         title = row[title_col]
         if pd.isna(title) or title.strip() == '':
+            pbar.update(1)
             continue
 
         # Get citations
