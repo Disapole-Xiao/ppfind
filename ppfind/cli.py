@@ -260,11 +260,10 @@ def cmd_interactive(args):
             
             # add loading indicator
             citations = fetcher.get_citations_from_scholar(title)
-            arxiv_link = fetcher.get_arxiv_link(title)
-            github_link = fetcher.get_github_link(title)
-
             print(f"  - Citations: {citations}")
+            arxiv_link = fetcher.get_arxiv_link(title)
             print(f"  - ArXiv Link: {arxiv_link}")
+            github_link = fetcher.get_github_link(title)
             print(f"  - GitHub Link: {github_link}")
             
         except KeyboardInterrupt:
@@ -279,13 +278,12 @@ def cmd_query(args):
     fetcher = PaperInfoFetcher(args.api_key)
 
     for title in args.titles:
-        citations = fetcher.get_citations_from_scholar(title)
-        arxiv_link = fetcher.get_arxiv_link(title)
-        github_link = fetcher.get_github_link(title)
-
         print(f"### {title}")
+        citations = fetcher.get_citations_from_scholar(title)
         print(f"  - Citations: {citations}")
+        arxiv_link = fetcher.get_arxiv_link(title)
         print(f"  - ArXiv Link: {arxiv_link}")
+        github_link = fetcher.get_github_link(title)
         print(f"  - GitHub Link: {github_link}")
         print()
 
