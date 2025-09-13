@@ -63,13 +63,13 @@ Output example:
 
 ### 3. File Processing
 
-Currenly, CSV and XLSX files are supported.
+Currenly, CSV and XLSX files are supported. [Here](./example.csv) is an example file.
 
 By default, `ppfind` gets paper titles at `title` column and outputs results to `citations`, `arxiv_link` and `github_link`. Modify this by adding options or in config.
 
 ```bash
 # Basic usage (output file will be {original_name}_new.csv)
-ppfind f papers.csv
+ppfind f examples.csv
 
 # Specify column names
 ppfind f papers.xlsx --title-col "Paper Title" --citation-col "Citation Count"
